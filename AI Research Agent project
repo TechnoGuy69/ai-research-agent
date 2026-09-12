@@ -1,0 +1,234 @@
+MIT License
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## 🤖 Featured AI Project
+
+### AI Research Agent
+
+An AI-powered research assistant built with **n8n + OpenAI + SerpApi + Python**.
+
+**What it demonstrates**
+
+- AI agent orchestration
+- LLM tool calling
+- Web research
+- Conversational memory
+- Numerical calculations
+- Python-based analysis
+
+🔗 **Project:** `https://github.com/YOUR_USERNAME/ai-research-agent`
+
+### 🛠️ Tech
+
+`n8n` `OpenAI` `SerpApi` `Python` `LLM` `AI Agents` `Automation`
+
+# 🤖 AI Research Agent
+
+An AI-powered research assistant built with **n8n, OpenAI, SerpApi, Python, and conversational memory**.
+
+The agent accepts a user's question, decides which tools to use, searches the web, performs calculations or Python-based analysis when needed, and keeps conversational context across messages.
+
+## ✨ Features
+
+- 🔎 Web search with SerpApi
+- 🧠 AI reasoning with OpenAI
+- 💬 Conversational memory
+- 🧮 Calculator tool
+- 🐍 Python code tool
+- 🔄 Agent-based tool orchestration with n8n
+
+## 🏗️ Architecture
+
+```text
+User
+  │
+  ▼
+Chat Trigger
+  │
+  ▼
+AI Agent
+  ├── OpenAI Chat Model
+  ├── Simple Memory
+  ├── SerpApi Search
+  ├── Calculator
+  └── Python Code Tool
+  │
+  ▼
+Final Research Response
+```
+
+## 🛠️ Tech Stack
+
+- n8n
+- OpenAI
+- SerpApi
+- Python
+- Large Language Models (LLMs)
+- AI Agent / Tool Calling
+- Conversational Memory
+
+## 🎯 Example Use Cases
+
+- Researching technical topics
+- Comparing technologies
+- Gathering information from the web
+- Performing calculations during research
+- Running Python-based analysis
+- Continuing a multi-turn research conversation
+
+## ⚙️ Setup
+
+### 1. Install or open n8n
+
+Use your preferred n8n setup, then open the editor.
+
+### 2. Import the workflow
+
+Import:
+
+```text
+workflow/ai-research-agent-sanitized.json
+```
+
+### 3. Configure credentials
+
+Create/configure credentials for:
+
+- OpenAI
+- SerpApi
+
+Do **not** commit API keys, tokens, passwords, webhook secrets, or private credentials to GitHub.
+
+### 4. Activate the workflow
+
+Enable the workflow and open the chat trigger interface.
+
+### 5. Test the agent
+
+Try prompts such as:
+
+```text
+Research the latest trends in AI agents and summarize the main developments.
+```
+
+```text
+Compare two technologies and calculate the percentage difference between their reported values.
+```
+
+```text
+Use Python to calculate the average, median, and standard deviation of this dataset: 12, 15, 18, 20, 25.
+```
+
+## 💡 How It Works
+
+1. The **Chat Trigger** receives the user's question.
+2. The **AI Agent** decides what action is required.
+3. The **OpenAI Chat Model** provides the language-model reasoning.
+4. **SerpApi** is available when external web research is needed.
+5. The **Calculator** handles numerical calculations.
+6. The **Python Code Tool** handles programmable analysis.
+7. **Simple Memory** keeps relevant conversational context.
+8. The agent returns the final response to the user.
+
+## 📸 Demo
+
+Add your screenshot or GIF here:
+
+```markdown
+![AI Research Agent Demo](demo/demo.gif)
+```
+
+## 🧪 Example Research Flow
+
+```text
+User Question
+     ↓
+AI Agent
+     ↓
+Choose Tool(s)
+     ├── Web Search
+     ├── Calculator
+     └── Python
+     ↓
+Combine Results
+     ↓
+Final Answer
+```
+
+## ⚠️ Limitations
+
+- Research quality depends on the sources returned by the web-search tool.
+- LLM-generated responses can contain inaccuracies.
+- External API usage may incur costs.
+- Python execution should only be enabled in a trusted environment.
+- The public repository contains a sanitized workflow export; credentials must be configured locally.
+
+## 🚀 Future Improvements
+
+- Add source citations to every research answer
+- Add source ranking and deduplication
+- Add PDF/document research
+- Add persistent vector memory
+- Add structured research reports
+- Add evaluation benchmarks for answer quality
+- Add a dedicated web interface
+- Add automated workflow tests
+
+## 📁 Project Structure
+
+```text
+ai-research-agent/
+├── README.md
+├── .gitignore
+├── LICENSE
+├── workflow/
+│   └── ai-research-agent-sanitized.json
+├── docs/
+│   ├── architecture.png
+│   └── workflow-screenshot.png
+├── demo/
+│   └── demo.gif
+└── examples/
+    ├── example-1.md
+    └── example-2.md
+```
+
+## 👤 Author
+
+Built as an AI-agent portfolio project demonstrating LLM orchestration, tool calling, web research, memory, and Python integration.
+
+# Before Publishing
+
+Do NOT publish the raw n8n export without reviewing it.
+
+1. Open `workflow/ai-research-agent-raw.json` locally.
+2. Remove credential references and n8n instance-specific metadata.
+3. Save the cleaned copy as `workflow/ai-research-agent-sanitized.json`.
+4. Search the file for:
+   - `credentials`
+   - `apiKey`
+   - `token`
+   - `password`
+   - `webhookId`
+   - `instanceId`
+5. Confirm there are no real secrets or private identifiers.
+6. Only commit the sanitized file.
