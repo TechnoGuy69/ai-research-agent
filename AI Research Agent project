@@ -35,7 +35,7 @@ An AI-powered research assistant built with **n8n + OpenAI + SerpApi + Python**.
 - Numerical calculations
 - Python-based analysis
 
-🔗 **Project:** `https://github.com/YOUR_USERNAME/ai-research-agent`
+🔗 **Project:** `https://github.com/TechnoGuy69/ai-research-agent`
 
 ### 🛠️ Tech
 
@@ -106,7 +106,7 @@ Use your preferred n8n setup, then open the editor.
 Import:
 
 ```text
-workflow/ai-research-agent-sanitized.json
+workflow/ai-research-agent.json
 ```
 
 ### 3. Configure credentials
@@ -201,7 +201,7 @@ ai-research-agent/
 ├── .gitignore
 ├── LICENSE
 ├── workflow/
-│   └── ai-research-agent-sanitized.json
+│   └── ai-research-agent.json
 ├── docs/
 │   ├── architecture.png
 │   └── workflow-screenshot.png
